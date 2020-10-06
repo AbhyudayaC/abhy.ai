@@ -1,2 +1,1 @@
-# abhy.github.io
-# abhyudaya
+# abhyudayac.github.io
