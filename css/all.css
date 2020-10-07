@@ -209,6 +209,20 @@ h2.slogan{
 	padding: 34px 0 50px 0;
 	background: url(../images/slogan_bg.gif) no-repeat 50% 0;
 }
+
+button.cv-button {
+    background-color: #fff;
+    border: none;
+    color: #28292b;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px
+}
 /*main
  */
 #main{
@@ -429,7 +443,7 @@ transition: all 0.5s ease-in-out;
 .item-list {
 	overflow: hidden;
 	text-align:center;
-	margin: 0 0 0 -24px;
+	margin: auto;
 }
 .item-list li {
 	display:inline-block;
@@ -659,7 +673,7 @@ transition: all 0.5s ease-in-out;
 	}
 	.footer-content .social li.linkedin a{
 		background-image: url(../images/icon_li@x2.png);
-		background-size:42px 38px;
+		background-size:25px 25px;
 	}
 	.footer-content .social li.twitter a{
 		background-image: url(../images/icon_tw@x2.png);
@@ -667,7 +681,7 @@ transition: all 0.5s ease-in-out;
 	}
 	.footer-content .social li.instagram a{
 		background-image: url(../images/icon_insta@x2.png);
-		background-size:38px 38px;
+		background-size:25px 25px;
 	}
 	.plagin_list li.li_1 a{
 		background-image: url(../images/icon_ps@x2.png);
