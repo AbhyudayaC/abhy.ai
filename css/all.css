@@ -447,7 +447,7 @@ transition: all 0.5s ease-in-out;
 }
 .item-list li {
 	display:inline-block;
-	margin: 0 0 25px 24px;
+	margin: 25px 0 25px 24px;
 	vertical-align: top;
 	font-size: 0;
 }
@@ -481,12 +481,18 @@ transition: all 0.5s ease-in-out;
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	height: 270px;
+	height: 300px;
 	z-index: 400;
 	padding: 0 30px;
 }
 .item a{
 	text-decoration: none;
+}
+.item .project-title{
+	padding: 10px 0 0;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
 }
 .item .item-content h4{
 	display: block;
