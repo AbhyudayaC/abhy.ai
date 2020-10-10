@@ -239,8 +239,8 @@
     <script src="js/cells-by-row.js"></script>
     <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
     <script type='text/javascript'>
-        (function(){
-            setTimeout((), 2000);
+        function onReady() {
+            document.getElementsByTagName('div')[0].setAttribute('class', 'loaded');
             if( window.localStorage ){
                 if( !localStorage.getItem('firstLoad') ){
                     localStorage['firstLoad'] = true;
@@ -249,7 +249,13 @@
                 else
                     localStorage.removeItem('firstLoad');
             }
-        })();
+        }
+        if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', onReady, false);
+        }
+        else {
+            window.onload = onReady;
+        }
     </script>
 </body>
 </html>
