@@ -8,13 +8,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="refresh" content="1">
     <meta name="format-detection" content="telephone=no">
     <title>Abhyudaya Choumal</title>
     <!-- add fancybox.css -->
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/screen.css" />
+    <script type='text/javascript'>
+        (function(){
+            if( window.localStorage ){
+                if( !localStorage.getItem('firstLoad') ){
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                }
+                else
+                    localStorage.removeItem('firstLoad');
+            }
+        })();
+    </script>
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
