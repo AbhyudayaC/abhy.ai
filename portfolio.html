@@ -14,18 +14,6 @@
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/screen.css" />
-    <script type='text/javascript'>
-        (function(){
-            if( window.localStorage ){
-                if( !localStorage.getItem('firstLoad') ){
-                    localStorage['firstLoad'] = true;
-                    window.location.reload();
-                }
-                else
-                    localStorage.removeItem('firstLoad');
-            }
-        })();
-    </script>
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -250,5 +238,17 @@
     <script src="js/cells-by-row.js"></script>
     <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type='text/javascript'>
+        (function(){
+            if( window.localStorage ){
+                if( !localStorage.getItem('firstLoad') ){
+                    localStorage['firstLoad'] = true;
+                    window.location.reload();
+                }
+                else
+                    localStorage.removeItem('firstLoad');
+            }
+        })();
+    </script>
 </body>
 </html>
